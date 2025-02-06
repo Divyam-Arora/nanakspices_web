@@ -1,13 +1,13 @@
 import ContactCard from "@/components/contact/ContactCard";
 import ProductCard from "@/components/product/ProductCard";
-import { Input } from "@/components/ui/input";
 import { getData } from "@/utils/request";
 import Link from "next/link";
-import React from "react";
 
 const page = async () => {
   const categories: [] = await getData("/public/category");
-  const category = categories.find((cat: any) => cat.name == "Spices");
+  const category: { id: string } = categories.find(
+    (cat: { name: string }) => cat.name == "Spices"
+  );
   const products = await getData(`/public/category/${category.id}`);
   // console.log(products);
   return (

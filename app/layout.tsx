@@ -1,13 +1,12 @@
-import type { Metadata } from "next";
-import localFont from "next/font/local";
-import "./globals.css";
-import "../styles/common.css";
+import Contact from "@/components/contact/ContactDrawer";
 import Footer from "@/components/Footer";
 import logo from "@/public/Logo_noback.png";
+import type { Metadata } from "next";
+import localFont from "next/font/local";
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import Contact from "@/components/contact/ContactDrawer";
+import "../styles/common.css";
+import "./globals.css";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",

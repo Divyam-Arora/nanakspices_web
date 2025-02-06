@@ -6,7 +6,7 @@ const ContactCard = () => {
   return (
     <div className="bg-[#C5C1AE] rounded-lg my-12 overflow-hidden flex flex-col md:flex-row">
       {/* <div className="object-bottom"> */}
-      <Image src={spicesImage} className="object-cover" />
+      <Image src={spicesImage} className="object-cover" alt="spices" />
       {/* </div> */}
       <div className="p-6 flex flex-col gap-4">
         <h2 className="text-2xl font-bold">Quality spices for every scale!</h2>

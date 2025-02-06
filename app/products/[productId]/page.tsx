@@ -7,16 +7,8 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { getData } from "@/utils/request";
-import { privateDecrypt } from "crypto";
-import {
-  ArrowLeft,
-  ArrowLeftCircle,
-  ArrowLeftIcon,
-  LucideArrowLeft,
-} from "lucide-react";
-import Image from "next/image";
+import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
-import React from "react";
 
 const page = async ({ params }) => {
   // const navigate =

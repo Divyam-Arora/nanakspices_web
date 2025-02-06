@@ -1,6 +1,3 @@
-import Link from "next/link";
-import React from "react";
-
 const Footer = () => {
   return (
     <div className="flex flex-col justify-center items-center w-full bg-[#1B303A] text-secondary p-4 mt-4">
