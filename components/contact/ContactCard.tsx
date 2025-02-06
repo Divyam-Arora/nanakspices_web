@@ -1,7 +1,6 @@
-import React from "react";
-import Contact from "./ContactDrawer";
 import spicesImage from "@/public/spices.jpg";
 import Image from "next/image";
+import Contact from "./ContactDrawer";
 
 const ContactCard = () => {
   return (
@@ -12,7 +11,7 @@ const ContactCard = () => {
       <div className="p-6 flex flex-col gap-4">
         <h2 className="text-2xl font-bold">Quality spices for every scale!</h2>
         <p className="text-sm leading-7">
-          Whether you're crafting family dinners or stocking store shelves,
+          Whether you are crafting family dinners or stocking store shelves,
           connect with us to experience premium flavors that make every dish
           extraordinary.
         </p>
