@@ -1,0 +1,4 @@
+.product:active .backdrop {
+  opacity: 0.3;
+  transition: 0.1s;
+}
