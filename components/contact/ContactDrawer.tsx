@@ -37,8 +37,18 @@ function Contact({ children }: { children?: ReactNode }) {
         <h6 className="text-xs capitalize text-gray-600">Email</h6>
         <div className="text-gray-800 font-bold">
           <a href="mailto:sunilindustries@gmail.com">
-            <p>sunilindustries@gmail.com</p>
+            <p>sunilindustries1408@gmail.com</p>
           </a>
+        </div>
+      </div>
+      <div className="flex flex-col gap-1">
+        <h6 className="text-xs capitalize text-gray-600">Address</h6>
+        <div className="text-gray-800 font-bold">
+          <p>Sunil Industries</p>
+          <p>VPO Ajouli, Distt. Una</p>
+          {/* <p>Distt. Una</p> */}
+          <p>Himachal Pradesh</p>
+          <p>174301</p>
         </div>
       </div>
     </div>

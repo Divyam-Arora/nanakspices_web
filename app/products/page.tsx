@@ -4,11 +4,13 @@ import { getData } from "@/utils/request";
 import Link from "next/link";
 
 const page = async () => {
-  const categories: [] = await getData("/public/category");
-  const category: { id: string } = categories.find(
+  const categories: [] = await getData("/public/category").catch((err) =>
+    console.log(err)
+  );
+  const category: { id: string } = categories?.find(
     (cat: { name: string }) => cat.name == "Spices"
   );
-  const products = await getData(`/public/category/${category.id}`);
+  const products = await getData(`/public/category/${category?.id}`);
   // console.log(products);
   return (
     <div className="flex flex-col gap-4 p-2">
